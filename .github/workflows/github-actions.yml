@@ -39,5 +39,5 @@ jobs:
         run: phpmd src github codesize,naming,design
 
       - name: Run phpstan
-        run: ./vendor/bin/phpstan analyse src
+        run: ./vendor/bin/phpstan analyse -l 9 src
 
