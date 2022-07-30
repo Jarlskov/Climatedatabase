@@ -1,0 +1,17 @@
+{
+    "name": "jarlskov/climatedatabase",
+    "description": "PHP library to store and search the big climate database https://denstoreklimadatabase.dk/en",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Jarlskov\\Climatedatabase\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jesper Jarlskov",
+            "email": "jesper@jarlskov.dk"
+        }
+    ],
+    "require": {}
+}
