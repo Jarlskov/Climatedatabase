@@ -11,14 +11,16 @@ use PhpOffice\PhpSpreadsheet\Worksheet\Worksheet;
 
 class Setup
 {
-    const DOWNLOAD_URL = 'https://denstoreklimadatabase.dk/sites/klimadatabasen.dk/files/media/document/Results_FINAL_20210201v4.xlsx';
+    const DOWNLOAD_URL =
+        'https://denstoreklimadatabase.dk/sites/klimadatabasen.dk/files/media/document/Results_FINAL_20210201v4.xlsx';
     const WORKSHEET_NAME = 'Ra_500food';
 
     /**
      * Get the full content of the climate database.
      *
      * @param string $filePath
-     *          Optional file path. If the database doesn't exist in the provided path it will be downloaded and stored in the path.
+     *          Optional file path.
+     *          If the database doesn't exist in the provided path it will be downloaded and stored in the path.
      *          If no path is provided a temp file will be created.
      *
      * @return array<Item>
@@ -33,7 +35,8 @@ class Setup
     /**
      * Download the database excel file.
      *
-     * @return string Optional download path, if path isn't provided a temp file will be created. 
+     * @return string
+     *      Optional download path, if path isn't provided a temp file will be created.
      */
     public function downloadDatabase(string $downloadPath = null): string
     {

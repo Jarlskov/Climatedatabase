@@ -6,6 +6,9 @@ namespace Jarlskov\Climatedatabase\Models;
 
 class Category
 {
+    /**
+     * @SuppressWarnings(PHPMD.ExcessiveParameterList)
+     */
     public function __construct(
         private string $name,
         private string $danishName,
@@ -17,8 +20,7 @@ class Category
         private string $gpcBrickLevel2Name,
         private int $gpcBrickLevel3,
         private string $gpcBrickLevel3Name
-    )
-    {
+    ) {
     }
 
     public function getName(): string

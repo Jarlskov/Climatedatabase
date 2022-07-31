@@ -13,7 +13,7 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
           php-version: "${{ matrix.php }}"
-          extensions: sqlite
+          extensions: sqlite, gd
           tools: phpcpd, phpcs, phpmd
 
       - uses: actions/checkout@v3

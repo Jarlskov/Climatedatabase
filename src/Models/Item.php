@@ -6,6 +6,9 @@ namespace Jarlskov\Climatedatabase\Models;
 
 class Item
 {
+    /**
+     * @SuppressWarnings(PHPMD.ExcessiveParameterList)
+     */
     public function __construct(
         private Category $category,
         private string $name,
@@ -22,7 +25,8 @@ class Item
         private float $fat,
         private float $carbohydrate,
         private float $protein
-    ) { }
+    ) {
+    }
 
     public function getCategory(): Category
     {
