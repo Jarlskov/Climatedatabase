@@ -10,13 +10,18 @@ class Item
         private Category $category,
         private string $name,
         private string $danishName,
+        private string $unit,
         private float $co2e,
         private float $agriculture,
         private float $iluc,
         private float $processing,
         private float $packaging,
         private float $transport,
-        private float $retail
+        private float $retail,
+        private float $energy,
+        private float $fat,
+        private float $carbohydrate,
+        private float $protein
     ) { }
 
     public function getCategory(): Category
@@ -32,6 +37,11 @@ class Item
     public function getDanishName(): string
     {
         return $this->danishName;
+    }
+
+    public function getUnit(): string
+    {
+        return $this->unit;
     }
 
     public function getCo2e(): float
@@ -67,5 +77,25 @@ class Item
     public function getRetail(): float
     {
         return $this->retail;
+    }
+
+    public function getEnergy(): float
+    {
+        return $this->energy;
+    }
+
+    public function getFat(): float
+    {
+        return $this->fat;
+    }
+
+    public function getCarbohydrate(): float
+    {
+        return $this->carbohydrate;
+    }
+
+    public function getProtein(): float
+    {
+        return $this->protein;
     }
 }
